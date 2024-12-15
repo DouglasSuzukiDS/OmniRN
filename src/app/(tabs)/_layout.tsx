@@ -1,5 +1,6 @@
 import { Stack, Tabs } from "expo-router";
 import FontAwesome from '@expo/vector-icons/FontAwesome'
+import '../../../global.css'
 export default function TabsLayout() {
    return (
       <Tabs screenOptions={{

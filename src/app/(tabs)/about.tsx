@@ -1,10 +1,10 @@
 import { Image, StyleSheet, Text, View } from "react-native"
 
 export default function Screen() {
-   return(
+   return (
       <View className="flex-1 justify-center items-center p-10 bg-gray-600">
          <Image
-            source={ require('../../assets/Texugo.png') }
+            source={require('../../../assets/Texugo.png')}
             alt="Imagem do Texugo"
             className="w-[180px] h-[200px] mb-2"
          />

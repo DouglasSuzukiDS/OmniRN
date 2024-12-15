@@ -1,6 +1,7 @@
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Drawer } from 'expo-router/drawer'
 import FontAwesome from '@expo/vector-icons/FontAwesome'
+import '../../global.css'
 
 export default function RootLayout() {
    return (
@@ -12,7 +13,7 @@ export default function RootLayout() {
             },
             drawerContentContainerStyle: { // Area que contem o menu
                backgroundColor: '#4b5563',
-               
+
             },
             drawerStyle: { // Container do Drawer
                backgroundColor: '#4b5563'
@@ -23,7 +24,7 @@ export default function RootLayout() {
                options={{
                   drawerLabel: 'Home',
                   headerTitle: 'Informações',
-                  drawerIcon: () => <FontAwesome name="home" color={'#d1d5db'} size={24} className="bg-blue-600" />
+                  drawerIcon: () => <FontAwesome name="home" color={'#d1d5db'} size={24} />
                   // drawerItemStyle: { display: 'none' }
                }}
             />
@@ -35,9 +36,21 @@ export default function RootLayout() {
                   headerTitleAlign: 'center',
                   headerStyle: { backgroundColor: '#4b5563' },
                   headerTintColor: '#d1d5db',
-                  drawerIcon: () => <FontAwesome name="balance-scale" size={24} color={'#d1d5db'} className="bg-blue-600" />
+                  drawerIcon: () => <FontAwesome name="balance-scale" size={24} color={'#d1d5db'} />
 
                }} />
+
+            <Drawer.Screen
+               name="todo"
+               options={{
+                  title: 'Todo List',
+                  headerTitleAlign: 'center',
+                  headerStyle: { backgroundColor: '#4b5563' },
+                  headerTintColor: '#d1d5db',
+                  drawerIcon: () => <FontAwesome name="list" size={24} color={'#d1d5db'} />
+
+               }} />
+
          </Drawer>
       </GestureHandlerRootView>
    )
