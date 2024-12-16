@@ -8,23 +8,26 @@ export default function RootLayout() {
       <GestureHandlerRootView>
          <Drawer screenOptions={{
             drawerLabelStyle: { // Estilização da Label
-               color: '#d1d5db',
+               color: '#D1D5DB',
                fontWeight: 'bold',
             },
             drawerContentContainerStyle: { // Area que contem o menu
-               backgroundColor: '#4b5563',
+               backgroundColor: '#4B5563',
 
             },
             drawerStyle: { // Container do Drawer
-               backgroundColor: '#4b5563'
+               backgroundColor: '#4B5563'
             }
          }}>
             <Drawer.Screen
                name="(tabs)"
                options={{
                   drawerLabel: 'Home',
-                  headerTitle: 'Informações',
-                  drawerIcon: () => <FontAwesome name="home" color={'#d1d5db'} size={24} />
+                  headerTitle: 'Home',
+                  headerTitleAlign: 'center',
+                  headerStyle: { backgroundColor: '#4B5563' },
+                  headerTintColor: '#D1D5DB',
+                  drawerIcon: () => <FontAwesome name="home" color={'#D1D5DB'} size={24} />
                   // drawerItemStyle: { display: 'none' }
                }}
             />
@@ -34,9 +37,9 @@ export default function RootLayout() {
                options={{
                   title: 'IMC',
                   headerTitleAlign: 'center',
-                  headerStyle: { backgroundColor: '#4b5563' },
-                  headerTintColor: '#d1d5db',
-                  drawerIcon: () => <FontAwesome name="balance-scale" size={24} color={'#d1d5db'} />
+                  headerStyle: { backgroundColor: '#4B5563' },
+                  headerTintColor: '#D1D5DB',
+                  drawerIcon: () => <FontAwesome name="balance-scale" size={24} color={'#D1D5DB'} />
 
                }} />
 
@@ -45,9 +48,10 @@ export default function RootLayout() {
                options={{
                   title: 'Todo List',
                   headerTitleAlign: 'center',
-                  headerStyle: { backgroundColor: '#4b5563' },
-                  headerTintColor: '#d1d5db',
-                  drawerIcon: () => <FontAwesome name="list" size={24} color={'#d1d5db'} />
+                  headerTitleStyle: { color: '#06AEAD' },
+                  headerStyle: { backgroundColor: '#000' },
+                  headerTintColor: '#D1D5DB',
+                  drawerIcon: () => <FontAwesome name="list" size={24} color={'#D1D5DB'} />
 
                }} />
 

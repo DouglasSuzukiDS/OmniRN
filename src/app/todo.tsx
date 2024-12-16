@@ -1,7 +1,7 @@
-import { Text } from "react-native";
+import { Container } from "../components/todo/Container";
 
-export default function Home() {
+export default function Screen() {
    return (
-      <Text className="text-red-600">Todo</Text>
+      <Container />
    )
 }

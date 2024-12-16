@@ -4,7 +4,7 @@ import '../../../global.css'
 export default function TabsLayout() {
    return (
       <Tabs screenOptions={{
-         tabBarActiveTintColor: '#F00',
+         tabBarActiveTintColor: 'blue',
          tabBarStyle: {
             backgroundColor: '#4b5563',
          },
@@ -31,6 +31,6 @@ export default function TabsLayout() {
                   <FontAwesome name="user" color={'#d1d5db'} size={size} />
                ),
             }} />
-      </Tabs>
+      </Tabs >
    )
 }
